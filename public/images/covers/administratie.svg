@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Abstracte editorial illustratie bij het onderwerp administratie">
+  <rect width="960" height="540" fill="#23262b" />
+  <rect x="60" y="60" width="840" height="420" fill="none" stroke="#585d63" stroke-width="2" opacity="0.5" />
+  <g stroke="#f1e3c4" stroke-width="2" opacity="0.7">
+    <line x1="120" y1="150" x2="620" y2="150" />
+    <line x1="120" y1="210" x2="560" y2="210" />
+    <line x1="120" y1="270" x2="600" y2="270" />
+    <line x1="120" y1="330" x2="500" y2="330" />
+  </g>
+  <circle cx="760" cy="380" r="90" fill="#b8862f" opacity="0.9" />
+  <circle cx="760" cy="380" r="40" fill="#23262b" />
+</svg>

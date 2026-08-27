@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MT-Discipline
 
-## Getting Started
+Kennis- en contentplatform van Mohamed el Tarrahi over belastingen, financiën, vermogensopbouw en AI. Gebouwd met Next.js (App Router), TypeScript en Tailwind CSS v4.
 
-First, run the development server:
+## Lokaal starten
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Productiebuild:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+Lint en typecheck:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+npx tsc --noEmit
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Projectstructuur
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/config/site.ts` — centrale merkgegevens: merknaam, positionering, tagline, e-mailadres, statements over de werkgever/afbakening.
+- `src/config/navigation.ts` — hoofd-, footer- en juridische navigatie.
+- `src/data/` — kennispijlers, voorbeeldartikelen, samenwerkingsvormen, FAQ, vertrouwensprincipes. Pas hier content aan zonder componenten te hoeven wijzigen.
+- `src/components/layout/` — Header, MobileMenu-logica (in Header.tsx), Footer, Logo.
+- `src/components/sections/` — alle homepage-secties.
+- `src/components/forms/` — NewsletterForm en ContactForm (front-end validatie, nog geen backend-integratie).
+- `src/components/legal/LegalLayout.tsx` — gedeelde layout voor privacy/disclaimer/algemene voorwaarden.
+- `src/app/` — pagina's, `sitemap.ts`, `robots.ts`, `icon.tsx` (favicon) en `opengraph-image.tsx`.
 
-## Deploy on Vercel
+## Nog te vervangen placeholders
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Wat | Waar | Opmerking |
+|---|---|---|
+| Zakelijk e-mailadres | `src/config/site.ts` → `businessEmail` | Nu `info@mt-discipline.nl` |
+| Definitieve website-URL | `src/config/site.ts` → `websiteUrl` | Wordt gebruikt voor metadata, sitemap en canonical URLs |
+| Portretfoto | `public/images/portrait-placeholder.svg` | Zie hieronder |
+| Logo | `src/components/layout/Logo.tsx` | Nu een typografisch woordmerk |
+| Favicon/OG-afbeelding | `src/app/icon.tsx`, `src/app/opengraph-image.tsx` | Nu automatisch gegenereerd in merkkleuren |
+| Socialmedia-links | `src/config/site.ts` → `socialLinks` | Leeg `url` = link wordt niet getoond |
+| Nieuwsbriefprovider | `src/components/forms/NewsletterForm.tsx` | Zie "Nieuwsbrief koppelen" |
+| Contactformulierintegratie | `src/components/forms/ContactForm.tsx` | Zie "Contactformulier koppelen" |
+| Juridische bedrijfsgegevens, bewaartermijnen | `src/app/privacy/page.tsx` | Gemarkeerd met een placeholder-notitie |
+| Tarieven en definitieve voorwaarden | `src/app/algemene-voorwaarden/page.tsx` | Placeholderversie, laat juridisch controleren |
+| Gratis download (checklist) | `src/components/sections/NewsletterSection.tsx` | Toont nu "Binnenkort beschikbaar" |
+| Artikelen | `src/data/articles.ts` | Status staat op `"soon"` tot er echte artikelpagina's zijn |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Portretfoto vervangen
+
+1. Plaats de foto in `public/images/`, bijvoorbeeld `portrait.jpg` (aanbevolen beeldverhouding 4:5, zoals de huidige placeholder 480×600).
+2. Vervang de `src="/images/portrait-placeholder.svg"` verwijzingen in `src/components/sections/Hero.tsx`, `src/components/sections/AboutFounderSection.tsx` en `src/app/over-mohamed/page.tsx`.
+
+### Nieuwsbrief koppelen
+
+In `src/components/forms/NewsletterForm.tsx` staat een `// TODO` in `handleSubmit`. Koppel daar een provider (bijvoorbeeld MailerLite, Brevo of Kit) of een eigen API-route. Bewaar API-keys in environment variables (`.env.local`, nooit committen) en roep de provider server-side aan (bijvoorbeeld via een Next.js Route Handler) zodat de key niet in de browser terechtkomt.
+
+### Contactformulier koppelen
+
+In `src/components/forms/ContactForm.tsx` staat een vergelijkbare `// TODO`. Koppel Resend, Formspree of een eigen API-route. Voeg server-side rate limiting en een spamfilter (bijvoorbeeld een honeypot-veld of hCaptcha) toe voordat het formulier publiek live gaat.
+
+## Deployment (Vercel)
+
+1. Push het project naar een Git-repository.
+2. Importeer de repository in Vercel.
+3. Stel environment variables in zodra er integraties zijn (nieuwsbrief, contactformulier).
+4. Controleer de productiebuild (`npm run build`) lokaal voordat je deployt.
+5. Koppel het definitieve domein en werk `websiteUrl` in `src/config/site.ts` bij.
+6. Test de formulieren, metadata (`/`), sitemap (`/sitemap.xml`) en robots (`/robots.txt`) op de live omgeving.
+7. Controleer de mobiele weergave en de juridische pagina's.
+
+## Aanbevolen vervolgstappen
+
+1. Eigen portretfoto toevoegen.
+2. Socialmedia-links toevoegen.
+3. Zakelijk e-mailadres en definitief domein instellen.
+4. Nieuwsbriefprovider en contactformulier koppelen.
+5. De eerste drie echte artikelen publiceren (en `status: "published"` zetten in `src/data/articles.ts`, plus artikelpagina's toevoegen onder `/kennis/[slug]`).
+6. Privacyverklaring en algemene voorwaarden juridisch laten controleren.
+7. Werkgeversbeleid van Habermehl rond externe publicaties laten checken.
+8. Privacyvriendelijke analytics toevoegen indien gewenst.
+9. Later een CMS of MDX-kennisbank koppelen voor de artikelen.

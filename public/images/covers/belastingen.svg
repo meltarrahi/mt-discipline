@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Abstracte editorial illustratie bij het onderwerp belastingen">
+  <rect width="960" height="540" fill="#0e2a47" />
+  <circle cx="760" cy="120" r="220" fill="#081b30" />
+  <g stroke="#b8862f" stroke-width="2" opacity="0.55">
+    <line x1="0" y1="90" x2="960" y2="90" />
+    <line x1="0" y1="180" x2="960" y2="180" />
+    <line x1="0" y1="270" x2="960" y2="270" />
+    <line x1="0" y1="360" x2="960" y2="360" />
+    <line x1="0" y1="450" x2="960" y2="450" />
+  </g>
+  <rect x="90" y="300" width="140" height="140" fill="#b8862f" opacity="0.9" />
+  <rect x="250" y="230" width="90" height="210" fill="#f1e3c4" opacity="0.85" />
+  <circle cx="470" cy="330" r="70" fill="none" stroke="#f1e3c4" stroke-width="6" />
+</svg>
