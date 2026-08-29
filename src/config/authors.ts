@@ -3,10 +3,9 @@ import type { Author } from "@/types";
 export const authors: Author[] = [
   {
     slug: "mohamed-el-tarrahi",
-    name: "Mohamed el Tarrahi",
-    role: "Fiscalist en oprichter van MT-Discipline",
-    bio: "Mohamed werkt in loondienst als fiscalist bij Habermehl en deelt via MT-Discipline op persoonlijke titel begrijpelijke kennis over belastingen, geld, ondernemen en administratie.",
-    avatar: "/images/portrait-placeholder.svg",
+    name: "Redactie MT-Discipline",
+    role: "Kennis- en contentplatform",
+    bio: "MT-Discipline deelt begrijpelijke, praktische kennis over belastingen, geld, ondernemen en administratie.",
   },
 ];
 
