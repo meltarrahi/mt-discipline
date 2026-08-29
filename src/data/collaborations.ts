@@ -67,7 +67,7 @@ export const processSteps: ProcessStep[] = [
   {
     step: "2",
     title: "Uitwerken",
-    description: "Mohamed vertaalt het onderwerp naar een duidelijke inhoudelijke en praktische aanpak.",
+    description: "MT-Discipline vertaalt het onderwerp naar een duidelijke inhoudelijke en praktische aanpak.",
   },
   {
     step: "3",
