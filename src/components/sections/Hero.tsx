@@ -1,9 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Banknote, Calculator, FileSpreadsheet, Landmark } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { siteConfig } from "@/config/site";
+
+const heroTopics = [
+  { label: "Belastingen", icon: Landmark },
+  { label: "Geld", icon: Banknote },
+  { label: "Ondernemen", icon: Calculator },
+  { label: "Administratie", icon: FileSpreadsheet },
+];
 
 export function Hero() {
   return (
@@ -31,11 +37,6 @@ export function Hero() {
             Praktische kennis over geld, belastingen, administratie en ondernemen — helder
             uitgelegd door {siteConfig.brandName}.
           </p>
-          <p className="mt-4 text-sm font-medium text-white/70">
-            Door {siteConfig.founderName} — fiscalist, financieel educator en oprichter van{" "}
-            {siteConfig.brandName}.
-          </p>
-
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Button href="/artikelen" size="md">
               Lees de nieuwste artikelen
@@ -59,15 +60,24 @@ export function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
-          <div className="overflow-hidden rounded-3xl border border-white/15 shadow-2xl shadow-black/30">
-            <Image
-              src="/images/portrait-placeholder.svg"
-              alt="Portretplaceholder van Mohamed el Tarrahi, oprichter van MT-Discipline"
-              width={480}
-              height={600}
-              priority
-              className="h-full w-full object-cover"
-            />
+          <div className="overflow-hidden rounded-3xl border border-white/15 bg-white/5 p-8 shadow-2xl shadow-black/30 backdrop-blur">
+            <span className="text-lg font-bold tracking-tight text-white">
+              MT<span className="text-accent">-</span>Discipline
+            </span>
+            <p className="mt-2 text-sm text-white/70">
+              Praktische kennis, geordend per onderwerp.
+            </p>
+            <dl className="mt-8 grid grid-cols-2 gap-4">
+              {heroTopics.map(({ label, icon: Icon }) => (
+                <div
+                  key={label}
+                  className="rounded-2xl border border-white/10 bg-white/5 p-4"
+                >
+                  <Icon className="h-5 w-5 text-accent" aria-hidden="true" />
+                  <dt className="mt-3 text-sm font-semibold text-white">{label}</dt>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </Container>
