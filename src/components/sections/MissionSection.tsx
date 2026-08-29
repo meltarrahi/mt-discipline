@@ -24,10 +24,10 @@ export function MissionSection() {
             financiële toekomst.
           </p>
           <blockquote className="mt-8 border-l-2 border-accent pl-5 text-lg font-medium text-primary-strong italic">
-            “Mijn doel is niet alleen om antwoorden te geven, maar om mensen te helpen begrijpen
+            “Het doel is niet alleen om antwoorden te geven, maar om mensen te helpen begrijpen
             waarom een financieel antwoord klopt.”
             <footer className="mt-3 text-sm font-normal text-ink-muted not-italic">
-              — {siteConfig.founderName}
+              — {siteConfig.brandName}
             </footer>
           </blockquote>
         </div>
