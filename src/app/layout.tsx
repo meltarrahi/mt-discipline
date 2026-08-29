@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     "Praktische kennis over geld, belastingen, administratie en ondernemen — helder uitgelegd door MT-Discipline.",
   keywords: [
     "MT-Discipline",
-    "Mohamed el Tarrahi",
     "financiële kennis",
     "financiële educatie",
     "belastingen uitgelegd",
@@ -38,8 +37,8 @@ export const metadata: Metadata = {
     "vermogensopbouw",
     "ondernemen en administratie",
   ],
-  authors: [{ name: siteConfig.founderName }],
-  creator: siteConfig.founderName,
+  authors: [{ name: siteConfig.brandName }],
+  creator: siteConfig.brandName,
   alternates: {
     canonical: "/",
   },
@@ -82,20 +81,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       "@type": "Organization",
       name: siteConfig.brandName,
       url: siteConfig.websiteUrl,
-      founder: {
-        "@type": "Person",
-        name: siteConfig.founderName,
-      },
-      ...(activeSocialLinks.length > 0 ? { sameAs: activeSocialLinks } : {}),
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: siteConfig.founderName,
-      url: siteConfig.websiteUrl,
-      jobTitle: "Fiscalist en financieel educator",
-      description:
-        "Oprichter van MT-Discipline en fiscalist in loondienst bij Habermehl. Deelt op persoonlijke titel educatieve content over belastingen, geld, ondernemen en administratie.",
       ...(activeSocialLinks.length > 0 ? { sameAs: activeSocialLinks } : {}),
     },
   ];
