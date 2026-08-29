@@ -36,9 +36,8 @@ export function AboutBrandSection() {
               inzicht en praktische toepassing met elkaar te verbinden.
             </p>
             <p>
-              De inhoud wordt ontwikkeld door {siteConfig.founderName}. Vanuit zijn fiscale en
-              financiële achtergrond vertaalt hij regels, cijfers en technologische
-              ontwikkelingen naar begrijpelijke informatie.
+              De content wordt ontwikkeld vanuit fiscale en financiële expertise, en vertaalt
+              regels, cijfers en technologische ontwikkelingen naar begrijpelijke informatie.
             </p>
           </div>
 
