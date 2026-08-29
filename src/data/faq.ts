@@ -14,7 +14,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Biedt MT-Discipline persoonlijk fiscaal advies aan?",
     answer:
-      "Nee. MT-Discipline is een kennis- en contentplatform. Mohamed verricht fiscale werkzaamheden uitsluitend vanuit zijn dienstverband bij Habermehl. Via MT-Discipline biedt hij geen zelfstandig fiscaal advies aan.",
+      "Nee. MT-Discipline is een kennis- en contentplatform. Fiscale werkzaamheden worden uitsluitend verricht vanuit een regulier dienstverband, niet via MT-Discipline. Via MT-Discipline wordt geen zelfstandig fiscaal advies aangeboden.",
   },
   {
     question: "Kan ik MT-Discipline inschakelen voor mijn boekhouding of belastingaangifte?",
@@ -32,7 +32,7 @@ export const faqItems: FaqItem[] = [
       "Ja. Algemene inhoudelijke reacties, correcties en suggesties zijn welkom. Op basis van een korte reactie of vraag wordt echter geen persoonlijk fiscaal, financieel of juridisch advies gegeven.",
   },
   {
-    question: "Kan Mohamed helpen bij het toepassen van AI?",
+    question: "Kan MT-Discipline helpen bij het toepassen van AI?",
     answer:
       "Samenwerkingen rond AI kunnen betrekking hebben op content, kennismanagement, productiviteit, promptontwikkeling, eenvoudige workflows en educatie. Eerst wordt beoordeeld of de vraag binnen de scope van MT-Discipline past.",
   },
