@@ -3,14 +3,14 @@ import { cn } from "@/lib/utils";
 
 type LogoProps = {
   className?: string;
-  showFounder?: boolean;
+  showTagline?: boolean;
 };
 
 /**
  * Voorlopig typografisch woordmerk. Vervang later eenvoudig door een SVG-beeldmerk
  * door dit component te vervangen door een <Image src="/images/logo.svg" ... />.
  */
-export function Logo({ className, showFounder = false }: LogoProps) {
+export function Logo({ className, showTagline = false }: LogoProps) {
   return (
     <Link
       href="/"
@@ -19,9 +19,9 @@ export function Logo({ className, showFounder = false }: LogoProps) {
       <span className="text-xl font-bold tracking-tight text-primary-strong sm:text-2xl">
         MT<span className="text-accent">-</span>Discipline
       </span>
-      {showFounder ? (
+      {showTagline ? (
         <span className="mt-1 text-xs font-medium text-ink-muted">
-          door Mohamed el Tarrahi
+          Meer grip op je financiën
         </span>
       ) : null}
     </Link>
