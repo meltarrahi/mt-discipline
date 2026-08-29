@@ -22,7 +22,6 @@ export function Footer() {
           <span className="text-xl font-bold tracking-tight text-white">
             MT<span className="text-accent">-</span>Discipline
           </span>
-          <p className="mt-2 text-sm text-white/70">Opgericht door {siteConfig.founderName}</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/80">
             {siteConfig.tagline}
             <br />
