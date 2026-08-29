@@ -40,7 +40,7 @@ export function Header({ searchIndex }: { searchIndex: SearchIndexEntry[] }) {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/80">
       <Container className="flex items-center justify-between py-4">
-        <Logo showFounder />
+        <Logo showTagline />
 
         <nav aria-label="Hoofdnavigatie" className="hidden lg:block">
           <ul className="flex items-center gap-7">
