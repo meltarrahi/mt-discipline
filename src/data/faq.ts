@@ -12,16 +12,6 @@ export const faqItems: FaqItem[] = [
       "Nee. De informatie op MT-Discipline is algemeen en educatief. Persoonlijke omstandigheden kunnen grote invloed hebben op fiscale en financiële gevolgen. Voor een individuele beoordeling is begeleiding door een passende deskundige nodig.",
   },
   {
-    question: "Biedt MT-Discipline persoonlijk fiscaal advies aan?",
-    answer:
-      "Nee. MT-Discipline is een kennis- en contentplatform. Fiscale werkzaamheden worden uitsluitend verricht vanuit een regulier dienstverband, niet via MT-Discipline. Via MT-Discipline wordt geen zelfstandig fiscaal advies aangeboden.",
-  },
-  {
-    question: "Kan ik MT-Discipline inschakelen voor mijn boekhouding of belastingaangifte?",
-    answer:
-      "Nee. Via MT-Discipline worden geen boekhoudkundige, administratieve of fiscale diensten voor individuele klanten aangeboden.",
-  },
-  {
     question: "Welke samenwerkingen zijn wel mogelijk?",
     answer:
       "MT-Discipline staat open voor samenwerkingen rond content, media, financiële educatie, workshops, ondernemerschap en praktische toepassingen van AI.",
