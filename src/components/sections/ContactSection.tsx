@@ -28,11 +28,6 @@ export function ContactSection() {
 
         <div className="rounded-3xl border border-border bg-white p-6 shadow-sm shadow-black/[0.03] sm:p-8">
           <ContactForm />
-
-          <p className="mt-6 border-t border-border pt-5 text-xs leading-relaxed text-ink-muted">
-            Let op: via {siteConfig.brandName} worden geen persoonlijke fiscale,
-            boekhoudkundige of administratieve diensten aangeboden. {siteConfig.employerStatement}
-          </p>
         </div>
       </Container>
     </section>
