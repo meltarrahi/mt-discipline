@@ -106,8 +106,7 @@ export function Footer() {
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="flex flex-col gap-3 py-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-2xl">{siteConfig.scopeStatement}</p>
+        <Container className="flex flex-col items-center gap-3 py-6 text-center text-xs text-white/60">
           <p>© {currentYear()} {siteConfig.brandName}. Alle rechten voorbehouden.</p>
         </Container>
       </div>
