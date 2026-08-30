@@ -18,12 +18,6 @@ export const siteConfig = {
   secondaryTagline: "Kennis. Overzicht. Discipline.",
   mission:
     "Financiële kennis toegankelijk maken, zodat mensen betere financiële vragen kunnen stellen, weloverwogen keuzes kunnen maken en meer grip krijgen op hun financiële toekomst.",
-  employerStatement:
-    "De redactie werkt in loondienst als fiscalist bij Habermehl. Deze fiscale werkzaamheden worden uitsluitend vanuit die functie verricht, niet via MT-Discipline.",
-  personalTitleStatement:
-    "De content op MT-Discipline wordt op persoonlijke titel gepubliceerd en vertegenwoordigt niet noodzakelijk de standpunten van de werkgever.",
-  scopeStatement:
-    "MT-Discipline is een kennis- en contentplatform en biedt geen zelfstandige fiscale, boekhoudkundige of administratieve dienstverlening aan.",
   generalDisclaimer:
     "De informatie op MT-Discipline is uitsluitend algemeen en educatief van aard. De inhoud vormt geen persoonlijk fiscaal, juridisch, financieel, boekhoudkundig of beleggingsadvies en houdt geen rekening met individuele feiten en omstandigheden. Wet- en regelgeving kan veranderen. Laat belangrijke beslissingen waar nodig beoordelen door een bevoegde deskundige.",
 } as const;
