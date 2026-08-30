@@ -6,7 +6,6 @@ import type { SocialLink } from "@/types";
  */
 export const siteConfig = {
   brandName: "MT-Discipline",
-  founderName: "Mohamed el Tarrahi",
   websiteUrl: "https://www.mt-discipline.nl",
   // Placeholder: vervang door het definitieve zakelijke e-mailadres.
   businessEmail: "info@mt-discipline.nl",
@@ -20,9 +19,9 @@ export const siteConfig = {
   mission:
     "Financiële kennis toegankelijk maken, zodat mensen betere financiële vragen kunnen stellen, weloverwogen keuzes kunnen maken en meer grip krijgen op hun financiële toekomst.",
   employerStatement:
-    "Mohamed el Tarrahi werkt in loondienst als fiscalist bij Habermehl. Zijn fiscale werkzaamheden verricht hij uitsluitend vanuit die functie.",
+    "De redactie werkt in loondienst als fiscalist bij Habermehl. Deze fiscale werkzaamheden worden uitsluitend vanuit die functie verricht, niet via MT-Discipline.",
   personalTitleStatement:
-    "De content op MT-Discipline wordt op persoonlijke titel gepubliceerd en vertegenwoordigt niet noodzakelijk de standpunten van de werkgever van Mohamed.",
+    "De content op MT-Discipline wordt op persoonlijke titel gepubliceerd en vertegenwoordigt niet noodzakelijk de standpunten van de werkgever.",
   scopeStatement:
     "MT-Discipline is een kennis- en contentplatform en biedt geen zelfstandige fiscale, boekhoudkundige of administratieve dienstverlening aan.",
   generalDisclaimer:
