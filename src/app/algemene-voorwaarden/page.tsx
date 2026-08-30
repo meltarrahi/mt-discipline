@@ -27,7 +27,7 @@ export default function AlgemeneVoorwaardenPage() {
         <h2>1. Toepasselijkheid</h2>
         <p>
           Deze voorwaarden zijn van toepassing op alle offertes, opdrachten en overeenkomsten
-          tussen {siteConfig.brandName} ({siteConfig.founderName}) en een opdrachtgever, voor
+          tussen {siteConfig.brandName} en een opdrachtgever, voor
           zover deze betrekking hebben op content, media, workshops, trainingen,
           AI-samenwerkingen, digitale producten of educatieve samenwerkingen.
         </p>
@@ -99,7 +99,7 @@ export default function AlgemeneVoorwaardenPage() {
         <p>
           Tenzij anders overeengekomen, blijft het intellectueel eigendom van door{" "}
           {siteConfig.brandName} ontwikkelde content, materialen en concepten berusten bij{" "}
-          {siteConfig.founderName}, totdat volledige betaling heeft plaatsgevonden en gebruiksrechten
+          {siteConfig.brandName}, totdat volledige betaling heeft plaatsgevonden en gebruiksrechten
           expliciet zijn overgedragen.
         </p>
       </div>
