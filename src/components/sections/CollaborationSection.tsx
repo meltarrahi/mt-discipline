@@ -3,7 +3,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CollaborationCard } from "@/components/sections/CollaborationCard";
 import { collaborationTypes } from "@/data/collaborations";
-import { siteConfig } from "@/config/site";
 
 export function CollaborationSection() {
   return (
@@ -23,7 +22,6 @@ export function CollaborationSection() {
 
         <div className="mt-10">
           <Button href="/contact">Bespreek een samenwerking</Button>
-          <p className="mt-4 max-w-xl text-sm text-ink-muted">{siteConfig.scopeStatement}</p>
         </div>
       </Container>
     </section>
