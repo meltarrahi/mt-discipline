@@ -26,7 +26,7 @@ export default function PrivacyPage() {
       <div>
         <h2>Wie is verantwoordelijk</h2>
         <p>
-          {siteConfig.brandName} is een kennis- en contentplatform van {siteConfig.founderName}.
+          {siteConfig.brandName} is een kennis- en contentplatform.
           Voor vragen over deze privacyverklaring of over de verwerking van persoonsgegevens kun
           je contact opnemen via{" "}
           <a href={`mailto:${siteConfig.businessEmail}`}>{siteConfig.businessEmail}</a>.
