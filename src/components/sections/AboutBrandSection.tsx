@@ -52,8 +52,6 @@ export function AboutBrandSection() {
               </div>
             ))}
           </dl>
-
-          <p className="mt-8 text-sm text-ink-muted">{siteConfig.scopeStatement}</p>
         </div>
       </Container>
     </section>
