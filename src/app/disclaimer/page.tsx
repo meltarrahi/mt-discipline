@@ -23,34 +23,12 @@ export default function DisclaimerPage() {
       </div>
 
       <div>
-        <h2>Geen zelfstandige dienstverlening</h2>
-        <p>
-          {siteConfig.scopeStatement} {siteConfig.employerStatement}
-        </p>
-      </div>
-
-      <div>
-        <h2>Persoonlijke titel</h2>
-        <p>{siteConfig.personalTitleStatement}</p>
-      </div>
-
-      <div>
         <h2>Geen garantie op juistheid of volledigheid</h2>
         <p>
           Ondanks de zorgvuldigheid waarmee content op MT-Discipline wordt samengesteld, kan
           niet worden gegarandeerd dat alle informatie te allen tijde volledig, juist of actueel
           is. Wet- en regelgeving op het gebied van belastingen, financiën en boekhouding kan
           veranderen. Aan de inhoud van deze website kunnen geen rechten worden ontleend.
-        </p>
-      </div>
-
-      <div>
-        <h2>Individuele omstandigheden</h2>
-        <p>
-          Fiscale, financiële en boekhoudkundige gevolgen zijn sterk afhankelijk van individuele
-          feiten en omstandigheden. De algemene informatie op deze website is niet toegespitst op
-          een specifieke situatie. Laat belangrijke financiële of fiscale beslissingen waar nodig
-          beoordelen door een bevoegde deskundige.
         </p>
       </div>
 
