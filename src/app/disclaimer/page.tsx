@@ -66,7 +66,7 @@ export default function DisclaimerPage() {
       <div>
         <h2>Aansprakelijkheid</h2>
         <p>
-          MT-Discipline en {siteConfig.founderName} aanvaarden geen aansprakelijkheid voor
+          MT-Discipline aanvaardt geen aansprakelijkheid voor
           schade die voortvloeit uit het gebruik van de informatie op deze website, tenzij sprake
           is van opzet of bewuste roekeloosheid.
         </p>
